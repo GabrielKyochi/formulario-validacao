@@ -1,5 +1,8 @@
 function validarFormularioCliente() {
     //Adquirição de dados
+
+    const regex = /^[^\s]+@[^\s]+\.[^\s]+$/    
+
     const nomeCliente = document.getElementById('nomeCliente').value;
     console.log(nomeCliente);
 
@@ -43,28 +46,28 @@ function validarFormularioCliente() {
         console.log(nomeCliente);
     }
 
-    if (dataNascimentoCliente > 2007) {
+    if (!dataNascimentoCliente) {
         alert('Preencha a sua data de nascimento porfavor.');
         return;
     } else {
         console.log(dataNascimentoCliente);
     }
 
-    if (!enderecoCliente) {
+    if(!enderecoCliente) {
         alert('Preencha o seu endereço porfavor.');
         return;
     } else {
         console.log(enderecoCliente);
     }
 
-    if (isNaN(numeroCliente) || numeroCliente.lenght !== 9) {
+    if (isNaN(!numeroCliente) || numeroCliente.lenght > 9 || numeroCliente.lenght < 9) {
         alert('Preencha o número de telefone corretamente com 9 digitos porfavor.');
         return;
     } else {
         console.log(numeroCliente);
     }
 
-    if (!emailCliente) {
+    if (!emailCliente || emailCliente == regex){
         alert('Preencha corretamente o email porfavor.');
         return;
     } else {
