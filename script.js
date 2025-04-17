@@ -53,7 +53,19 @@ function validarFormularioCliente(){
         console.log(dataNascimentoCliente);
     }
 
-    
+    if(!enderecoCliente){
+        alert('Preencha o seu endereço porfavor.');
+        return;
+    } else{
+        console.log(enderecoCliente);
+    }
+
+    if(isNaN(numeroCliente) || numeroCliente.lenght !== 9){
+        alert('Preencha o número de telefone corretamente porfavor.');
+        return;
+    } else{
+        console.log(numeroCliente);
+    }
 
 
 
