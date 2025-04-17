@@ -1,44 +1,50 @@
 function validarFormularioCliente(){
     //Adquirição de dados
-    const nomeCliente = document.getElementById('nomeCliente').value.trim();
+    const nomeCliente = document.getElementById('nomeCliente').value;
     console.log(nomeCliente);
 
-    const dataNascimentoCliente = document.getElementById('dataNascimentoCliente').value.trim();
+    const dataNascimentoCliente = document.getElementById('dataNascimentoCliente');
     console.log(dataNascimentoCliente);
 
-    const enderecoCliente = document.getElementById('enderecoCliente').Value.trim();
+    const enderecoCliente = document.getElementById('enderecoCliente');
     console.log(enderecoCliente);
 
-    const numeroCliente = document.getElementById('numeroCliente').Value.trim();
+    const numeroCliente = document.getElementById('numeroCliente');
     console.log(numeroCliente);
 
-    const emailCliente = document.getElementById('emailCliente').Value.trim();
+    const emailCliente = document.getElementById('emailCliente');
     console.log(emailCliente);
 
-    const cpfCliente = document.getElementById('cpfCliente').Value.trim();
+    const cpfCliente = document.getElementById('cpfCliente');
     console.log(cpfCliente);
 
-    const corCliente = document.getElementById('corCliente').Value.trim();
+    const corCliente = document.getElementById('corCliente');
     console.log(corCliente);
 
-    const parentescoCliente = document.getElementById('parentescoCliente').Value.trim();
+    const parentescoCliente = document.getElementById('parentescoCliente');
     console.log(parentescoCliente);
 
-    const numeroParentescoCliente = document.getElementById('numeroParentescoCliente').Value.trim();
+    const numeroParentescoCliente = document.getElementById('numeroParentescoCliente');
     console.log(numeroParentescoCliente);
 
-    const emailParentescoCliente = document.getElementById('emailParentescoCliente').Value.trim();
+    const emailParentescoCliente = document.getElementById('emailParentescoCliente');
     console.log(emailParentescoCliente);
 
-    const senhaCliente = document.getElementById('senhaCliente').Value.trim();
+    const senhaCliente = document.getElementById('senhaCliente');
     console.log(senhaCliente);
 
-    const senhaConfirmacaoCliente = document.getElementById('senhaConfirmacaoCliente').Value.trim();
+    const senhaConfirmacaoCliente = document.getElementById('senhaConfirmacaoCliente');
     console.log(senhaConfirmacaoCliente);
     //Encerramento da adquirição de dados
 
-    //Validação do formulário
+    //Processamento de dados
 
+    if(!nomeCliente){
+        alert('Digite o seu nome corretamente.');
+        return;
+    } else{
+        console.log(nome);
+    }
 
 
 
