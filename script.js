@@ -40,12 +40,20 @@ function validarFormularioCliente(){
     //Processamento de dados
 
     if(!nomeCliente){
-        alert('Digite o seu nome corretamente.');
+        alert('Preencha o seu nome porfavor.');
         return;
     } else{
-        console.log(nome);
+        console.log(nomeCliente);
     }
 
+    if(dataNascimentoCliente > 2007){
+        alert('Preencha a sua data de nascimento porfavor.');
+        return;
+    } else{
+        console.log(dataNascimentoCliente);
+    }
+
+    
 
 
 
