@@ -40,3 +40,7 @@ body{
     border-width: 5px;
     color: white;
 }
+
+.botaoDeEnviar{
+    background-color: rgb(0, 185, 0);
+}
